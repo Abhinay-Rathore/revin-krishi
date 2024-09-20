@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    border: none;
+  }
+
+body, html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.product-hero {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+
+.product-hero h1 {
+    color: #333;
+}
+
+.project-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px 100px;
+    gap: 30px;
+}
+
+.project-image img {
+    width: 48%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.content {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 80px;
+}
+
+.project-details{
+    max-width: 900px;
+}
+
+.project-details h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.project-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.project-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-info p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.project-challenges {
+    padding: 50px;
+    margin: 10px 50px;
+}
+
+.project-challenges h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.challenge {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.challenge i {
+    font-size: 24px;
+    margin-right: 20px;
+    color: #5cb85c;
+}
+
+.challenge h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.challenge p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+
+
+/* For screens larger than 1200px */
+@media (min-width: 1200px) {
+    .product-hero {
+        font-size: 50px;
+    }
+    .project-image {
+        margin: 60px 100px;
+        gap: 30px;
+    }
+    .project-details {
+        max-width: 900px;
+    }
+}
+
+/* For tablets and small laptops (768px to 1200px) */
+@media (max-width: 1199px) and (min-width: 768px) {
+    .product-hero {
+        font-size: 40px;
+    }
+    .project-image {
+        margin: 40px 50px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project-image img {
+       width: 60%;
+       height: auto;
+    }
+
+    .project-details {
+        margin-bottom: 30px;
+    }
+    .content {
+        flex-direction: column;
+        margin: 20px 40px;
+    }
+}
+
+/* For mobile devices (below 768px) */
+@media (max-width: 767px) {
+    .product-hero {
+        font-size: 30px;
+    }
+    .project-image {
+        flex-direction: column;
+        margin: 20px 20px;
+        gap: 20px;
+    }
+    .project-image img {
+        width: 100%;
+    }
+    .content {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+    .project-info, .project-challenges {
+        margin: 20px 0;
+        padding: 20px;
+    }
+    .challenge {
+        flex-direction: column;
+        text-align: center;
+    }
+    .challenge i {
+        margin-bottom: 10px;
+    }
+}
