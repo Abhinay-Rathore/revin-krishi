@@ -1933,7 +1933,7 @@ header .logo img {
 
 
 
-
+/* 
 .revin-new-animation{
     padding: 40px 0 0 0;
 }
@@ -1946,7 +1946,6 @@ header .logo img {
 
 .revin-new-slideshow {
     height: 700px;
-    /* background-color: antiquewhite; */
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -1996,9 +1995,6 @@ header .logo img {
 }
 
 
-/* .revin-new-controls a.current-link {
-    background-color: #7dbd77;
-} */
 
 .revin-new-controls a.moved {
     order: -1; 
@@ -2107,34 +2103,32 @@ header .logo img {
 .revin-new-controls a.selected-link::after {
     content: '';
     position: absolute;
-    width: 40%; /* Make the line as wide as the link */
-    height: 3px; /* Thickness of the line */
-    background-color: #11afab; /* Same color as the background of the current link */
-    top: 70px; /* Position it below the link */
+    width: 40%; 
+    height: 3px; 
+    background-color: #11afab; 
+    top: 70px; 
     right: 30px;
 }
 
 
 .log{
-    width: 60px;  /* Set desired width */
-    height: 80px; /* Set desired height */
+    width: 60px;  
+    height: 80px; 
     object-fit: cover;
 }
 .skypulse{
-    width: 150px;  /* Set desired width */
-    height: 80px; /* Set desired height */
+    width: 150px;  
+    height: 80px; 
     object-fit: cover;
 }
 .sight{
-    width: 80px;  /* Set desired width */
-    height: 80px; /* Set desired height */
+    width: 80px;  
+    height: 80px; 
     object-fit: cover;
 }
 
 
 
-
-/* Media Query for Responsive Design */
 @media ((min-width: 768px) and (max-width: 1050px)) {
 
     .revin-new-left-part{
@@ -2288,5 +2282,356 @@ header .logo img {
         right: -15rem;
         bottom: -23rem;
         transform: rotate(180deg);
+    }
+}
+
+ */
+
+
+
+
+
+
+
+
+    .revin-new-design {
+        padding: 50px 20px;
+        max-width: 1000px;
+        margin: 0 auto;
+        height: 48rem;
+    }
+    
+    .revin-new-design-heading {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+    
+    .revin-new-design-text-section{
+        margin: 5px 5px 5px 30px;
+    }
+    
+    .revin-new-carousel {
+        perspective: 1000px;
+        position: relative;
+    }
+    
+    .revin-new-carousel-container {
+        display: flex;
+        position: relative;
+        transform-style: preserve-3d;
+        transition: transform 6s ease-in-out;
+        height: auto; 
+    }
+    
+    .revin-new-carousel-card {
+        min-width: 100%; 
+        height: auto; 
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content:space-between;
+        background: white;
+        border-radius: 8px;
+        box-shadow: 
+            0px 0px 5px rgba(0, 0, 0, 0.1),
+            0px 0px 10px rgba(0, 0, 0, 0.05),
+            0px 0px 15px rgba(0, 0, 0, 0.03);
+        transition: opacity 0.5s ease, transform 1s ease;
+        opacity: 0; 
+    }
+    
+    .revin-new-carousel-card.active {
+        opacity: 1;
+    }
+    
+    .revin-new-design-product-title {
+        font-size: 36px;
+        color: #333;
+    }
+    
+    .revin-new-design-highlight {
+        color: #31C6C3;
+    }
+    
+    .revin-new-design-logo {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .revin-revin {
+        width: 10rem;
+        height: auto;
+    }
+    
+    .revin-revin img {
+        width: 100%;
+    }
+    
+    .revin-sight {
+        width: 22rem;
+        height: auto;
+    }
+    
+    .revin-sight img {
+        width: 100%;
+    }
+    
+    .revin-new-design-description {
+        font-size: 16px;
+        color: #333;
+        margin-top: 20px;
+        line-height: 1.5;
+    }
+    
+    .revin-new-design-image-section {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .revin-new-design-images {
+        align-items: center;
+        height: 30rem;
+        margin: 10px;
+    }
+    
+    .revin-new-design-images img {
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .revin-new-carousel-buttons {
+        position: absolute;
+        left: -20%;
+        right: -20%;
+        display: flex;
+        justify-content: space-between;
+        transform: translateY(500%);
+    }
+    
+    .revin-new-carousel-btn {
+        background: #31C6C3;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50%;
+        cursor: pointer;
+        color: white;
+        font-size: 20px;
+        transition: background 0.3s ease;
+    }
+    
+    .revin-new-carousel-btn:hover {
+        background: #28a5a2;
+    }
+    
+    
+
+  
+  /* Show desktop section for screens 768px and above (tablets and desktops) */
+  @media only screen and (min-width: 768px) {
+    .revin-new-design {
+      display: block;
+    }
+  }
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .revin-new-design {
+        max-width: 700px;
+        padding: 40px 20px;
+        height: 43rem;
+    }
+
+    .revin-new-carousel-card {
+        min-width: 100%; 
+       
+    }
+    .revin-new-design-text-section{
+        margin: 10px 5px 10px 20px;
+    }
+    
+    .revin-new-design-heading h1 {
+        font-size: 32px;
+    }
+
+    
+    .revin-revin {
+        width: 8rem;
+        height: auto;
+    }
+    
+    .revin-revin img {
+        width: 100%;
+    }
+    
+    .revin-sight {
+        width: 16rem;
+        height: auto;
+    }
+    
+    .revin-sight img {
+        width: 100%;
+    }
+
+    .revin-new-carousel-card {
+        flex-direction: row;
+    }
+
+    .revin-new-design-images {
+        height: 20rem;
+    }
+    .revin-new-design-images img {
+        height: 100%;
+    }
+    .log-img{
+        height: 16rem ;
+    }
+    .log-img img{
+        height: 100%;
+    }
+
+
+    .revin-new-carousel-btn {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .revin-new-design {
+        padding: 40px 15px;
+        height: auto;
+    }
+
+    .revin-new-design-heading h1 {
+        font-size: 28px;
+    }
+
+    .revin-new-design-logo {
+        flex-direction: row;
+    }
+
+    .revin-new-carousel-card {
+        flex-direction: column;
+    }
+
+    .revin-new-design-images {
+        height: 20rem;
+    }
+
+    .revin-new-carousel-btn {
+        font-size: 16px;
+    }
+}
+
+
+/* Mobile view (display this content only on small screens) */
+@media (max-width: 767px) {
+    .revin-new-design {
+        display: none;
+    }
+    .revin-new-products {
+        padding: 40px 20px;
+        display: block; 
+    }
+
+    h1 {
+        text-align: center;
+        color: #333;
+    }
+
+    .revin-new-intro {
+        text-align: center;
+        color: #666;
+        margin-bottom: 20px;
+        margin-top: 5px;
+    }
+
+    .revin-new-product {
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+        padding: 15px;
+    }
+
+    .revin-new-product img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+
+    .revin-new-product-title {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s ease; 
+    }
+
+    .revin-new-product-title.expanded {
+        color: #008080;
+    }
+
+    .revin-new-product-title h2 {
+        margin: 0;
+    }
+
+    .revin-new-product-title-images {
+        display: flex;
+        gap: 6px; 
+    }
+
+    .revin-new-product-title-images img {
+        width: 45px; 
+        height: 45px; 
+        object-fit: contain; 
+    }
+
+    .revin-new-product-title .revin-new-toggle {
+        font-size: 24px;
+        color: #008080;
+    }
+
+    .revin-new-product-content {
+        display: none;
+    }
+
+    .revin-new-product-content.active {
+        display: block;
+    }
+
+    .revin-new-product-description h3 {
+        color: #333;
+    }
+
+    .revin-new-product-description p {
+        color: #666;
+        margin-bottom: 10px;
+    }
+
+    .revin-new-buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .revin-new-btn {
+        text-decoration: none;
+        padding: 10px 15px;
+        border-radius: 4px;
+        color: #fff;
+    }
+
+    .revin-new-read-more {
+        background-color: #006666;
+    }
+
+}
+
+/* Tablet and Desktop View (hide the content on larger screens) */
+@media (min-width: 768px) {
+    .revin-new-products {
+        display: none;
     }
 }
