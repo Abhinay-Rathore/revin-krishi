@@ -59,7 +59,7 @@
                     <p>In-field sensing and monitoring has never been easier, more complete, or more reliable.</p>
                     <a href="#" class="request-cta-button">Request a Demo</a>
                 </div>
-                <div class="image-content-system3">
+                <div class="image-system3">
                     <img src="sight.png" alt="Monitoring Device">
                 </div>
             </div>
@@ -77,14 +77,16 @@
             </div>
             <div class="system3-content-design">
                 <div class="image-content-system3">
-                    <img id="mainImage" src="features.png" alt="Field Device Image">
-                    <img id="weatherImage" class="small-overlay-image" src="image-weather.png" alt="Weather Overlay" style="display: none;">
-                    <img id="plantImage" class="small-overlay-image" src="image-plant.png" alt="Plant Overlay" style="display: none;">
-                    <img id="soilImage" class="small-overlay-image" src="image-soil.png" alt="Soil Overlay" style="display: none;">
+                    <img id="mainImage" class="big-image" src="features.png" alt="Field Device Image">
+                    <div class="small-images">
+                        <img id="weatherImage" class="small-overlay-image cloud-img" src="weather.png" alt="Weather Overlay" >
+                        <img id="plantImage" class="small-overlay-image plant-img" src="plant.png" alt="Plant Overlay" >
+                        <img id="soilImage" class="small-overlay-image soil-img" src="soil.png" alt="Soil Overlay" >
+                    </div>  
                 </div>
                 <div class="tabs-container-system3">
                     <div class="tabs-system3">
-                        <button class="tab-system3 active-system3" data-tab="weather">Weather</button>
+                        <button class="tab-system3 active-border active-system3" data-tab="weather">Weather</button>
                         <button class="tab-system3" data-tab="plant">Plant</button>
                         <button class="tab-system3" data-tab="soil">Soil & Irrigation</button>
                     </div>
@@ -120,10 +122,10 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="arrow-buttons-system3">
+                    <!-- <div class="arrow-buttons-system3">
                         <button id="prevBtn" class="prev-button-system3">←</button>
                         <button id="nextBtn" class="next-button-system3">→</button>
-                    </div>
+                    </div> -->
                 </div>
             </div>
         </section>
@@ -329,89 +331,37 @@
     </main>
   
 <script>
-
 document.addEventListener("DOMContentLoaded", () => {
     const tabs = document.querySelectorAll(".tab-system3");
     const tabContents = document.querySelectorAll(".tab-content-system3");
-    const mainImage = document.getElementById("mainImage");
-
-    // Small overlay images
-    const weatherImage = document.getElementById("weatherImage");
-    const plantImage = document.getElementById("plantImage");
-    const soilImage = document.getElementById("soilImage");
-
-    // Map each tab to its corresponding small image
-    const images = {
-        weather: weatherImage,
-        plant: plantImage,
-        soil: soilImage
+    const overlayImages = {
+        weather: document.getElementById("weatherImage"),
+        plant: document.getElementById("plantImage"),
+        soil: document.getElementById("soilImage"),
     };
 
-    const showOverlayImage = (imageElement) => {
-        // Hide all small overlay images
-        Object.values(images).forEach(img => img.style.display = "none");
-        // Show the specified image
-        imageElement.style.display = "block";
-    };
+    // Set default content and overlay image for "weather" tab
+    document.getElementById("weather-details").classList.add("active-system3");
+    overlayImages["weather"].classList.add("show");
 
-    // Event listener for tabs
     tabs.forEach(tab => {
         tab.addEventListener("click", () => {
-            // Remove active class from all tabs
-            tabs.forEach(t => t.classList.remove("active-system3"));
-            // Add active class to clicked tab
-            tab.classList.add("active-system3");
+            const selectedTab = tab.getAttribute("data-tab");
 
-            // Get the data-tab attribute value of the clicked tab
-            const tabId = tab.getAttribute("data-tab");
+            // Toggle active tab button style
+            tabs.forEach(t => t.classList.remove("active-border"));
+            tab.classList.add("active-border");
 
-            // Show the corresponding tab content and hide others
-            tabContents.forEach(content => {
-                content.classList.remove("active-system3");
-                if (content.id === tabId + "-details") {
-                    content.classList.add("active-system3");
-                }
-            });
+            // Toggle tab content visibility
+            tabContents.forEach(content => content.classList.remove("active-system3"));
+            document.getElementById(`${selectedTab}-details`).classList.add("active-system3");
 
-            // Change the main image based on the selected tab
-            mainImage.src = tabId + '-main.png';
-
-            // Show the small overlay image for the selected tab
-            showOverlayImage(images[tabId]);
+            // Toggle overlay images with smooth transition
+            Object.values(overlayImages).forEach(img => img.classList.remove("show"));
+            overlayImages[selectedTab].classList.add("show");
         });
-    });
-
-    // Arrow button navigation
-    let currentTabIndex = 0;
-    const tabsArray = Array.from(tabs);
-
-    const showTabByIndex = (index) => {
-        tabsArray.forEach((tab, i) => {
-            tab.classList.remove("active-system3");
-            if (i === index) {
-                tab.classList.add("active-system3");
-                document.getElementById(tab.getAttribute("data-tab") + "-details").classList.add("active-system3");
-                mainImage.src = images[tab.getAttribute("data-tab")];
-                // Show corresponding small image
-                showOverlayImage(images[tab.getAttribute("data-tab")]);
-            } else {
-                document.getElementById(tab.getAttribute("data-tab") + "-details").classList.remove("active-system3");
-            }
-        });
-    };
-
-    document.getElementById("nextBtn").addEventListener("click", () => {
-        currentTabIndex = (currentTabIndex + 1) % tabsArray.length;
-        showTabByIndex(currentTabIndex);
-    });
-
-    document.getElementById("prevBtn").addEventListener("click", () => {
-        currentTabIndex = (currentTabIndex - 1 + tabsArray.length) % tabsArray.length;
-        showTabByIndex(currentTabIndex);
     });
 });
-
-
 
 </script>
 
