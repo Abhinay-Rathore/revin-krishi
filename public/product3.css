@@ -7,20 +7,25 @@
     background-position: center;
     color: white;
     height: 100vh;
+    /* padding: 20px;  */
+    flex-wrap: wrap; 
 }
 
 .text-content-system3 {
     max-width: 50%;
+    flex: 1; 
+    padding: 50px; 
 }
 
 .text-content-system3 h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem; 
     font-weight: bold;
 }
 
 .text-content-system3 h1 {
     font-size: 3rem;
     margin: 20px 0;
+    line-height: 1.2;
 }
 
 .text-content-system3 p {
@@ -36,31 +41,40 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .request-cta-button:hover {
     background-color: #218838;
 }
 
+.image-system3 {
+    flex: 1; 
+    text-align: center; 
+}
+
 .image-system3 img {
-    width: 500px;
+    max-width: 500px; 
     height: auto;
 }
 
 /* Responsive styles */
 @media (max-width: 1024px) {
     .crop-monitoring-section-system3 {
+        flex-direction: column; 
+        text-align: center; 
+        height: auto; 
+        padding: 0px; 
+    }
+
+    .system-background-image{
+        display: flex;
         flex-direction: column;
-        text-align: center;
-        padding: 30px;
     }
 
     .text-content-system3 {
         max-width: 100%;
-    }
-
-    .image-system3 {
-        margin-top: 20px;
+        color: #ffffff;
     }
 
     .text-content-system3 h1 {
@@ -70,6 +84,10 @@
     .text-content-system3 p {
         font-size: 1.1rem;
     }
+
+    .image-system3 {
+        margin-top: 20px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -77,38 +95,47 @@
         font-size: 2rem;
     }
 
+    .text-content-system3 h2 {
+        font-size: 1.5rem;
+    }
+
     .text-content-system3 p {
         font-size: 1rem;
     }
 
-    .demo-button-system3 {
-        padding: 12px 25px;
+    .request-cta-button {
+        padding: 10px 20px; 
+        font-size: 1rem;
+    }
+
+    .image-system3 img {
+        max-width: 80%; 
     }
 }
 
 @media (max-width: 480px) {
-    .crop-monitoring-section-system3 {
-        padding: 20px;
-    }
 
     .text-content-system3 h1 {
         font-size: 1.75rem;
+        color: #ffffff;
     }
 
     .text-content-system3 h2 {
         font-size: 1.2rem;
+        color: #ffffff;
     }
 
     .text-content-system3 p {
         font-size: 0.9rem;
     }
 
-    .demo-button-system3 {
-        padding: 10px 20px;
+    .request-cta-button {
+        padding: 8px 15px; 
+        font-size: 0.9rem;
     }
 
     .image-system3 img {
-        width: 250px;
+        max-width: 70%; 
     }
 }
 
@@ -231,62 +258,6 @@
     display: block;
 }
 
-.arrow-buttons-system3 {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    position: absolute;
-    bottom: 20px;
-}
-
-.arrow-buttons-system3 button {
-    padding: 10px 20px;
-    background-color: #fff;
-    border: 2px solid #ddd;
-    border-radius: 50%;
-    cursor: pointer;
-    font-size: 1.5rem;
-    color: #333;
-    transition: background-color 0.3s ease;
-}
-
-.arrow-buttons-system3 button:hover {
-    background-color: #f0f0f0;
-}
-
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .title-system3 {
-        font-size: 2rem;
-    }
-
-    .description-system3 {
-        font-size: 1.1rem;
-    }
-
-    .tab-system3 {
-        font-size: 1rem;
-    }
-
-    .small-overlay-image {
-        width: 80px;
-    }
-}
-
-@media (max-width: 480px) {
-    .title-system3 {
-        font-size: 1.5rem;
-    }
-
-    .description-system3 {
-        font-size: 0.9rem;
-    }
-
-    .small-overlay-image {
-        width: 60px;
-    }
-}
-
 .small-overlay-image {
     display: none;
     opacity: 0;
@@ -300,6 +271,167 @@
     transform: scale(1); 
     transition: opacity 5s smooth, transform 5s smooth;
 }
+
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .system3-content-design {
+        flex-direction: column; /* Stack content vertically */
+        align-items: center;
+        gap: 20px; /* Maintain spacing */
+    }
+
+    .tabs-container-system3 {
+        margin-top: 20px; /* Adjust spacing for better alignment */
+    }
+
+    .tabs-system3 {
+        flex-wrap: wrap; /* Allow tabs to wrap */
+        justify-content: center;
+        gap: 15px; /* Reduce gap between tabs */
+    }
+
+    .content-container-system3 {
+        max-width: 100%;
+        padding: 20px;
+    }
+
+    .image-content-system3 img {
+        max-width: 90%; /* Scale images slightly */
+    }
+
+    .small-images {
+        justify-content: center; /* Center small images */
+        gap: 10px;
+    }
+
+    .plant-img{
+        position: absolute;
+        top: 60px;
+        right: 60px;
+    }
+    
+    .soil-img{
+        position: absolute;
+        bottom: 3cqi;
+        right: 200px;
+    }
+    
+    .cloud-img{
+        position: absolute;
+        top: 30px;
+        right: 150px;
+    }
+
+    .small-images img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .tab-system3 {
+        font-size: 1rem;
+        padding: 8px 15px;
+    }
+
+    .tab-content-system3 ul li {
+        margin-left: 0;
+        font-size: 0.95rem; /* Slightly smaller font size */
+        text-align: center; /* Align text for readability */
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .plant-img{
+        position: absolute;
+        top: 320px;
+        right: 200px;
+    }
+    
+    .soil-img{
+        position: absolute;
+        bottom: 130px;
+        right: 200px;
+    }
+    
+    .cloud-img{
+        position: absolute;
+        top: 100px;
+        right: 250px;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .title-system3 {
+        font-size: 1.75rem;
+    }
+
+    .description-system3 {
+        font-size: 1rem;
+    }
+
+    .tabs-system3 {
+        flex-direction: column; /* Stack tabs vertically */
+        gap: 10px;
+    }
+
+    .tab-system3 {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .image-content-system3 img {
+        max-width: 80%;
+    }
+
+    .small-images img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .tab-content-system3 ul li {
+        font-size: 0.9rem;
+        line-height: 1.8;
+    }
+}
+
+@media (max-width: 480px) {
+    .system3-content-design {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .title-system3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .description-system3 {
+        font-size: 0.85rem;
+        margin-bottom: 20px;
+    }
+
+    .tabs-system3 {
+        flex-direction: column; /* Stack tabs */
+        gap: 8px;
+    }
+
+    .tab-system3 {
+        font-size: 0.8rem;
+        padding: 6px 10px;
+    }
+
+    .small-images img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .tab-content-system3 ul li {
+        font-size: 0.8rem;
+        text-align: center;
+    }
+}
+
 
 
 
@@ -412,26 +544,27 @@
 }
 
 
-
 .how-it-works {
     text-align: center;
     padding: 10px 20px 50px 20px;
 }
 
-.how-it-works h2{
-    font-size: 2.3rem;
+.how-it-works h2 {
+    font-size: 2rem;
     margin: 10px 0 20px 0;
     padding: 10px;
 }
+
 .steps {
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap;
 }
+
 .step {
     background: #f9f9f9;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     flex: 0 1 30%;
     margin: 10px;
     text-align: center;
@@ -441,22 +574,26 @@
     justify-content: space-between;
     height: 400px;
 }
+
 .step img {
     max-width: 100%;
     height: auto;
     max-height: 200px; 
     object-fit: cover;
 }
+
 .step h3 {
     color: #2d6a4f;
     margin: 15px 0;
 }
+
 .step p {
     margin: 0 5px;
     color: #333;
     font-size: 16px;
     flex-grow: 1;
 }
+
 .step a {
     margin-bottom: 10px;
     display: inline-block;
@@ -465,6 +602,33 @@
     text-decoration: none;
     font-weight: bold;
 }
+
 .step:hover {
     transform: scale(1.05);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .how-it-works h2 {
+        font-size: 1.8rem;
+    }
+    .step {
+        flex: 0 1 45%; /* Two items per row on tablets */
+    }
+}
+
+@media (max-width: 480px) {
+    .how-it-works h2 {
+        font-size: 1.5rem;
+    }
+    .step {
+        flex: 0 1 100%; /* Full width on small devices */
+        height: auto; /* Adjust height to content */
+    }
+    .step p {
+        font-size: 14px; /* Reduce font size for better readability */
+    }
+    .step a {
+        font-size: 14px;
+    }
 }

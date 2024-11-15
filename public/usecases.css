@@ -784,13 +784,14 @@ body {
 
 .request-hero-content {
     text-align: center;
-    color: white;
+    color: #f1f1f1;
     padding: 20px;
 }
 
 .request-hero-content h1 {
     font-size: 2rem;
     margin-bottom: 20px;
+    color: #f1f1f1;
 }
 
 .request-hero-content p{
@@ -801,7 +802,7 @@ body {
 
 .request-cta-button {
     background-color: #28a745;
-    color: white;
+    color: #f1f1f1;
     padding: 12px 25px;
     border-radius: 25px;
     text-decoration: none;
