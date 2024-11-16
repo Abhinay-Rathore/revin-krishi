@@ -38,6 +38,8 @@ header .logo img {
     height: 60px;
 }
 
+
+
 @media only screen and (min-width: 1025px) {
     .dropdown {
         display: none; 
@@ -269,6 +271,10 @@ header .logo img {
         min-width: 120px;
         z-index: 1;
     }
+
+    .dropdown-contact{
+        margin-right: 70px;
+      }
 
     .dropdown .dropdown-content a {
         color: black;

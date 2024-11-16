@@ -17,6 +17,26 @@ body, html{
     background-color: #fff;
 }
 
+@media only screen and (max-width: 767px) {
+  .dropdown-contact{
+    margin-right: 70px;
+  }
+  
+  .dropdown .dropdown-content {
+    display: none; 
+    position: absolute;
+    right: -70%;
+    text-align: center;
+    background: #e8f0eb;
+    border-radius: 5px;
+    min-width: 120px;
+    z-index: 1;
+}
+}
+
+
+
+
 .background_image {
 
     background-image: url('cont-us.jpg');
