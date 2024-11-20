@@ -14,281 +14,112 @@ body {
     background: #f2f8f4;
 }
 
+.about-nav ul li a{
+    color: #002f6c;
+}
 
-@media only screen and (min-width: 1367px) {
-    .mission-section {
-        background: #E6F4EA;
-        padding: 70px 0;
-        text-align: center;
-        height: 50rem;
-        margin-bottom: -280px;
-    }
+.about-footer{
+    background-color: #fff;
+}
 
+
+
+.mission-section {
+    background: #fff;
+    padding: 70px 20px; /* Add padding for smaller screens */
+    text-align: center;
+    height: auto; /* Allow height to adjust dynamically */
+    margin-bottom: 0; /* Fix overlapping issues */
+}
+
+.mission-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 60px;
+}
+
+.mission-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+    max-width: 600px;
+    box-sizing: border-box;
+}
+
+.mission-text h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.mission-text h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.mission-text h2 span {
+    color: #a9cf46;
+}
+
+.mission-text p {
+    color: #605e5e;
+    font-weight: 400;
+}
+
+.mission-images {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    max-width: 600px;
+    margin-top: 20px; /* Add spacing for smaller screens */
+    box-sizing: border-box;
+}
+
+.mission-images video {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
     .mission-content {
-        display: flex;
+        flex-direction: column; /* Stack content vertically */
         align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
     }
 
     .mission-text {
-        flex: 1;
+        text-align: center; /* Center align text */
         padding: 20px;
-        text-align: left;
-        max-width: 600px;
-        margin-left: -18rem;
-        margin-bottom: 80px;
     }
-
-    .mission-text h1 {
-        font-size: 1.5rem;
-        font-weight: 500;
-        margin-bottom: 15px;
-
-    }
-
-    .mission-text h2 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-
-    .mission-text h2 span {
-        color: #a9cf46;
-    }
-
-    .mission-text p {
-        color: #605e5e;
-        font-weight: 400;
-    }
-
 
     .mission-images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .mission-images img {
-        border-radius: 10px;
-    }
-
-    .image1 {
-        width: 300px;
-        height: 210px;
-        margin-top: 10px;
-        margin-left: 50px;
-        box-shadow: -30px -20px 0px 0px #B2D4C2;
-
-    }
-    .image2 {
-        margin-top: 40px;
-        height: 120px;
-        width: 150px;
-    }
-    .image3 {
-        height: 120px;
-        width: 150px;
-        margin-left: 200px;
-    }
-    .image4 {
-        width: 300px;
-        height: 210px;
-        margin-top: -60px;
-        box-shadow: 30px 20px 0px 0px #B2D4C2;
-    }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1366px) {
-    .mission-section {
-        background: #E6F4EA;
-        padding: 40px 0;
-        text-align: center;
-        height: 60rem;
-        margin-bottom: -280px;
-    }
-
-    .mission-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
         margin-top: 20px;
     }
+}
 
-    .mission-text {
-        flex: 1;
-        padding: 10px;
-        text-align: left;
-        max-width:  350px;
-        margin-left: -4%;
-        
-        
-        margin-bottom: 80px;
-    }
-
+@media (max-width: 480px) {
     .mission-text h1 {
-        font-size: 20px;
-        font-weight: 500;
-        margin-bottom: 10px;
-
+        font-size: 1.2rem; /* Smaller font for mobile */
     }
 
     .mission-text h2 {
-        font-size: 27px;
-        margin-bottom: 7px;
-        font-weight: 700;
-    }
-
-    .mission-text h2 span {
-        color: #a9cf46;
+        font-size: 2rem;
     }
 
     .mission-text p {
-        color: #605e5e;
-        font-weight: 400;
+        font-size: 0.9rem; /* Adjust paragraph font size */
     }
 
-
-    .mission-images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        flex: 1;
-        max-width: 400px;
-    }
-
-    .mission-images img {
-        border-radius: 10px;
-    }
-
-    .image1 {
-        width: 180px;
-        height: 140px;
-        margin-top: 10px;
-        margin-left: 30px;
-        box-shadow: -15px -10px 0px 0px #B2D4C2;
-
-    }
-    .image2 {
-        margin-top: 40px;
-        height: 80px;
-        width: 120px;
-        margin-left: -5px;
-    }
-    .image3 {
-        height: 80px;
-        width: 120px;
-        margin-left: 90px;
-        margin-top: -5px;
-    }
-    .image4 {
-        width: 180px;
-        height: 140px;
-        margin-top: -40px;
-        margin-left: -5px;
-        box-shadow: 10px 10px 0px 0px #B2D4C2;
+    .mission-images video {
+        width: 100%; /* Ensure video fits the screen width */
+        height: auto;
     }
 }
 
-
-@media only screen and (max-width: 767px) {
-    .mission-section {
-        background: #E6F4EA;
-        padding: 70px 0;
-        text-align: center;
-        height: 480px;
-        margin-bottom: -280px;
-    }
-
-    .mission-content {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-        margin-left: 2px;
-        margin-top: -50px;
-    }
-
-    .mission-text {
-        padding: 20px;
-        text-align: left;
-        margin-bottom: 80px;
-        margin-right: 45%;
-        width: 200px ;
-    }
-
-    .mission-text h1 {
-        font-size: 10px;
-        font-weight: 500;
-        margin-bottom: 15px;
-        
-
-    }
-
-    .mission-text h2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-        font-weight: 700;
-    }
-
-    .mission-text h2 span {
-        color: #a9cf46;
-    }
-
-    .mission-text p {
-        color: #605e5e;
-        font-weight: 400;
-        font-size: 7px;
-    }
-
-
-    .mission-images {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
-        flex: 1;
-        max-width: 400px;
-        margin-right: 12px;
-        margin-top: -380px;
-    }
-
-    .mission-images img {
-        border-radius: 10px;
-    }
-
-    .image1 {
-        width: 90px;
-        height: 80px;
-        margin-top: 10px;
-        margin-left: 190px;
-        box-shadow: -6.5px -5px 0px 0px #B2D4C2;
-
-    }
-    .image2 {
-        margin-top: 20px;
-        margin-left: -7px;
-        height: 60px;
-        width: 70px;
-    }
-    .image3 {
-        height: 60px;
-        width: 70px;
-        margin-left: 210px;
-        margin-top: -6px;
-    }
-    .image4 {
-        width: 90px;
-        height: 80px;
-        margin-top: -17px ;
-        margin-left: -7px;
-        box-shadow: 6.5px 5px 0px 0px #B2D4C2;
-    }
-}
 
 
 .vision-mission-container {
@@ -296,7 +127,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    padding: 30px 20px;
+    padding: 0 20px 30px 20px;
     gap: 20px;
 }
 
@@ -640,8 +471,8 @@ body {
         text-align: center;
         margin: 0 10%;
         background-color: #f2f8f4;
-        margin-top: -450px;
-        height: 500px;
+        /* margin-top: -450px; */
+        /* height: 500px; */
     }
 
     .story-section h2 {
@@ -867,7 +698,7 @@ body {
 
 
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
     .team-section {
         padding: 50px 0;
         text-align: center;
@@ -917,9 +748,9 @@ body {
     .team-member p {
         color: #777;
     }
-}
+} */
 
-@media only screen and (max-width: 767px) {
+/* @media only screen and (max-width: 767px) {
     .team-section {
         padding: 20px 0;
         text-align: center;
@@ -971,6 +802,99 @@ body {
     .team-member p {
         color: #777;
         font-size: 10px;
+    }
+} */
+
+.team-section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.team-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.team-team-member {
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    position: relative;
+}
+
+.team-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.team-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.team-image-container:hover img {
+    transform: scale(1.1);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.team-image-container:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-name {
+    color: #002f6c;
+    font-size: 18px;
+    margin: 10px 0 5px;
+}
+
+.team-role {
+    color: #555;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-section {
+        padding: 20px 0;
+        text-align: center;
+        
+    }
+
+    .team-section h2 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+    }
+
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .team-team-member {
+        max-width: 90%;
     }
 }
 

@@ -20,7 +20,7 @@ body, html{
 
 .system-agriculture-section {
     height: 100vh;
-    background-image: url('system-background.jpg'); 
+    background-image: url('revinlog-background.png'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -37,112 +37,9 @@ body, html{
     align-items: center;
 }
 
-.system-content {
-    display: flex;
-    color: #fff;
-    max-width: 1100px;
-    padding: 20px;
-    gap: 15rem;
-    justify-content: space-between;
-    width: 100%;
-    flex-wrap: wrap;
+.text-content-system3{
+  color: #fff;
 }
-
-.system-text-content {
-    flex: 1;
-    min-width: 300px;
-}
-
-.system-text-content h1 {
-    font-size: 3.5rem;
-    margin-bottom: 10px;
-}
-
-.system-text-content p {
-    font-size: 1.2rem;
-    max-width: 400px;
-}
-
-.system-offerings {
-    flex: 1;
-    min-width: 300px;
-}
-
-.system-offerings h2 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-    margin-left: -2rem;
-}
-
-.system-offerings ul {
-    list-style-type: none;
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.system-offerings ul li {
-    margin-bottom: 10px;
-}
-
-/* Media Queries for responsiveness */
-
-/* For tablets (landscape) and smaller screens */
-@media (max-width: 1024px) {
-    .system-content {
-        flex-direction: column;
-        gap: 100px;
-        align-items: center;
-        text-align: center;
-    }
-
-    .system-text-content, .system-offerings {
-        text-align: center;
-        min-width: 100%;
-    }
-
-    .system-text-content h1 {
-        font-size: 2.5rem;
-    }
-
-    .system-text-content p, .system-offerings ul {
-        font-size: 1.1rem;
-    }
-
-    .system-offerings h2 {
-        font-size: 2rem;
-    }
-}
-
-/* For mobile phones */
-@media (max-width: 768px) {
-    .system-text-content h1 {
-        font-size: 2rem;
-    }
-
-    .system-text-content p, .system-offerings ul {
-        font-size: 1rem;
-    }
-
-    .system-offerings h2 {
-        font-size: 1.8rem;
-    }
-}
-
-/* For smaller mobile devices */
-@media (max-width: 480px) {
-    .system-text-content h1 {
-        font-size: 1.8rem;
-    }
-
-    .system-text-content p, .system-offerings ul {
-        font-size: 0.9rem;
-    }
-
-    .system-offerings h2 {
-        font-size: 1.6rem;
-    }
-}
-
 
 
 .system-precision-agriculture {

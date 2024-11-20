@@ -183,7 +183,9 @@ body, html{
   padding: 2.3rem 2.2rem;
   position: relative; 
 }
-
+.contact-info h3{
+  font-size: 2rem;
+}
 .contact-info .title{
   color: #10afab;
   font-weight: 600;
@@ -191,7 +193,7 @@ body, html{
 
 .text{
   color: #333;
-  margin: 1.5rem 0 2rem 0;
+  margin: 1.5rem 0 1.5rem 0;
   font-size: 1.25rem;
 }
 
@@ -226,28 +228,6 @@ body, html{
   bottom: -77px;
   right: 50px;
   opacity: 0.3;
-}
-
-.big-circle {
-  position: absolute;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: linear-gradient(to bottom, #c3dbd6, #9dd1c6);
-  bottom: 17%;
-  right: 50%;
-  transform: translate(-40%, 38%);
-}
-
-.big-circle:after {
-  content: "";
-  position: absolute;
-  width: 360px;
-  height: 360px;
-  background-color: #fafafa;
-  border-radius: 50%;
-  top: calc(50% - 180px);
-  left: calc(50% - 180px);
 }
 
 .square {

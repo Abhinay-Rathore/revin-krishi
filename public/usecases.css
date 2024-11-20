@@ -8,6 +8,10 @@ body {
     line-height: 1.6;
 }
 
+.about-nav ul li a{
+    color: #002f6c;
+}
+
 /* Large Screens (1367px and above) */
 @media only screen and (min-width: 1367px) {
     .mission-section {
@@ -67,9 +71,10 @@ body {
     .mission-content {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-around;
         flex-wrap: wrap;
         gap: 20px;
+        margin-top: 70px;
     }
 
     .mission-text {
@@ -77,7 +82,7 @@ body {
         padding: 10px;
         text-align: left;
         max-width: 350px;
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     .mission-text h2 {
@@ -195,7 +200,7 @@ body {
     padding: 0;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     gap: 10px;
     flex-wrap: wrap; 
 }
@@ -289,11 +294,13 @@ body {
     margin-bottom: 15px;
 }
 
-.text-section p {
+.text-section-para {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: justify;
 }
+
 
 .features {
     display: flex;
@@ -504,7 +511,7 @@ body {
 
 .case-study-heading h1 {
     font-size: 30px;
-    color: #48a864;
+    color: #13AEA6;
 }
 
 .case-study-heading h2 {
@@ -534,6 +541,7 @@ body {
 
 .case-study-slide h2 {
     font-size: 20px;
+    text-align: start;
 }
 
 .case-study-content {
@@ -559,6 +567,7 @@ body {
 
 .case-study-box p {
     margin: 10px 0;
+    text-align: left;
 }
 
 .case-study-nav-button {
@@ -668,111 +677,77 @@ body {
 
 
 
-/* request service section */
-.request-services-section {
-    padding: 20px 20px;
-    text-align: center;
-    background-color: #174417;
-}
 
-.revin-service-section-use{
-    background-color: #fff;
-}
-
-.request-serives-img{
-    height: 900px;
-    overflow: hidden;
-
-}
-
-.request-services-heading h1 {
+.request-service-heading-section {
+    color: #13AEA6;
     font-size: 2.5rem;
-    margin-bottom: 50px;
-    color: #fff;
-    margin-top: 25px;
+    margin-bottom: 10px; 
 }
 
-.request-services-heading span {
-    color: #00d1a1;
+
+.request-services-section h1 {
+    font-size: 2.5rem;
+    line-height: 1.2; 
 }
 
-.request-services-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
-    flex-wrap: wrap;
-}
 
-.request-service-box {
+.request-services-section {
     padding: 20px;
-    flex-basis: 30%;
     text-align: center;
+    background-color: #fff; 
 }
 
-.request-service-box img {
-    max-width: 80px;
-    margin-bottom: 20px;
+
+.request-serives-img {
+    margin: 20px;
+    height: auto; 
+    overflow: hidden;
 }
 
-.request-service-box h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-    color: #fff;
+.request-serives-img img {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto; 
+    display: block;
+    margin: 0 auto; 
 }
 
-.request-service-box p {
-    font-size: 1rem;
-    color: #a9b6b7;
-}
-
-/* Responsiveness */
-@media (max-width: 1024px) {
-    .request-service-box {
-        flex-basis: 45%;
-    }
-}
 
 @media (max-width: 768px) {
-    .request-serives-img{
-        /* width: 80%; */
-        height: auto;
-        overflow: hidden;
-    
-    }
-    .request-service-box {
-        flex-basis: 100%;
-        margin-bottom: 20px;
+    .request-service-heading-section {
+        font-size: 2rem; 
     }
 
-    .request-services-heading h1 {
+    .request-services-section h1 {
         font-size: 2rem;
+    }
+
+    .request-serives-img img {
+        max-width: 90%; 
     }
 }
 
 @media (max-width: 480px) {
-    .request-serives-img{
-        /* width: 300px; */
-        height: auto;
-        overflow: hidden;
-    
-    }
-    .request-services-heading h1 {
+    .request-service-heading-section {
         font-size: 1.5rem;
     }
 
-    .request-service-box h3 {
-        font-size: 1.25rem;
+    .request-services-section h1 {
+        font-size: 1.5rem;
     }
 
-    .request-service-box p {
-        font-size: 0.9rem;
+    .request-serives-img img {
+        max-width: 100%; 
     }
 }
+
+
+
 
 /* request form */
 
 .request-hero-section {
-    background-image: url('request-background.jpg'); 
+    background-image: url('request-background.png'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

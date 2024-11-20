@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: url('system-background.jpg'); 
+    background-image: url('revin-sight-background.png'); 
     background-size: cover;
     background-position: center;
     color: white;
@@ -12,7 +12,7 @@
 }
 
 .text-content-system3 {
-    max-width: 50%;
+    /* max-width: 50%; */
     flex: 1; 
     padding: 50px; 
 }
@@ -23,13 +23,13 @@
 }
 
 .text-content-system3 h1 {
-    font-size: 3rem;
+    font-size: 2.3rem;
     margin: 20px 0;
     line-height: 1.2;
 }
 
 .text-content-system3 p {
-    font-size: 1.25rem;
+    font-size: 1.1rem;
     margin-bottom: 30px;
 }
 
@@ -58,6 +58,14 @@
     height: auto;
 }
 
+.product-revin{
+    width: 250px;
+}
+
+.product-sight{
+    width: 200px;
+}
+
 /* Responsive styles */
 @media (max-width: 1024px) {
     .crop-monitoring-section-system3 {
@@ -75,18 +83,24 @@
     .text-content-system3 {
         max-width: 100%;
         color: #ffffff;
+        margin-top: 50px;
     }
 
     .text-content-system3 h1 {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .text-content-system3 p {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
-    .image-system3 {
-        margin-top: 20px;
+
+    .product-revin{
+        width: 200px;
+    }
+    
+    .product-sight{
+        width: 150px;
     }
 }
 
@@ -199,13 +213,13 @@
     border: 2px solid #fff;
 }
 
-.plant-img{
+.soil-img{
     position: absolute;
     top: 320px;
     right: 40px;
 }
 
-.soil-img{
+.plant-img{
     position: absolute;
     bottom: 150px;
     right: 250px;
@@ -443,7 +457,7 @@
 }
 
 .system3-why-choose h2 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #002d6b;
     margin-bottom: 10px;
 }
@@ -551,9 +565,16 @@
 
 .how-it-works h2 {
     font-size: 2rem;
-    margin: 10px 0 20px 0;
+    margin: 10px 0 0 0;
     padding: 10px;
 }
+
+.how-it-works p {
+    font-size: 1.2rem;
+    margin: 0 0 20px 0;
+    padding: 10px;
+}
+
 
 .steps {
     display: flex;
