@@ -28,10 +28,20 @@ body, html{
     justify-content: center;
 }
 
+.system-agriculture-section1 {
+  height: 100vh;
+  background-image: url('skypulse.png'); 
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .system-background-image {
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); 
+    background: rgba(0, 0, 0, 0.2); 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,8 +49,22 @@ body, html{
 
 .text-content-system3{
   color: #fff;
+  flex: 1;
+  padding: 50px;
 }
 
+.text-content-system3 h1{
+  font-size: 2.3rem;
+  margin: 20px 0;
+  line-height: 1.2;
+  color: white;
+  text-align: start;
+}
+
+.text-content-system3 p{
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+}
 
 .system-precision-agriculture {
     text-align: center;
@@ -114,8 +138,51 @@ body, html{
     line-height: 1.6;
 }
 
+.request-cta-button {
+  background-color: #28a745;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+.request-cta-button:hover {
+  background-color: #218838;
+}
+
+.skypulse img{
+  width: 40%;
+}
+
+.process-step {
+  max-width: 600px;
+  text-align: left;
+  /* padding: 20px; */
+  background-color: #fff;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+.process-step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #11afab;
+}
+
+.process-step p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
 /* Responsive layout */
 @media (max-width: 768px) {
+    .skypulse img{
+      width: 350px;
+    }
     .system-tab-content {
         flex-direction: column;
         text-align: center;
@@ -140,6 +207,57 @@ body, html{
     .system-tabs {
         flex-direction: column;
     }
+
+    .text-content-system3 h1{
+      font-size: 1.9rem;
+      margin: 20px 0;
+      line-height: 1.2;
+      color: white;
+      text-align: start;
+    }
+}
+
+.request-hero-section {
+  background-image: url('Daas.jpg'); 
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.request-hero-content {
+  text-align: center;
+  color: #f1f1f1;
+  padding: 20px;
+}
+
+.request-hero-content h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.request-hero-content p{
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin: 0 0 25px 0;
+}
+
+.request-cta-button {
+  background-color: #28a745;
+  color: #f1f1f1;
+  padding: 12px 25px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease;
+}
+
+.request-cta-button:hover {
+  background-color: #218838;
 }
 
 
@@ -152,10 +270,11 @@ body, html{
     font-size: 3rem;
     font-weight: bold;
     margin-bottom: 2rem;
+    color: #39376f;
   }
   
   .sys-highlight {
-    color: #00c853; /* Green highlight color */
+    color: #11afab; /* Green highlight color */
   }
   
   .sys-image-container {
@@ -185,6 +304,10 @@ body, html{
     font-size: 1.25rem;
     font-weight: bold;
     margin-bottom: 0.5rem;
+    background-color: #11afab;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
   }
   
   .sys-feature-description {
@@ -227,7 +350,7 @@ body, html{
   }
   
   .system-drone-text {
-    max-width: 600px;
+    max-width: 1000px;
   }
   
   .system-drone-heading {

@@ -65,7 +65,13 @@
 .product-sight{
     width: 200px;
 }
-
+.sight_main img{
+    width: 300px;
+    margin-left: -5px;
+}
+.revin-log img{
+    width: 200px;
+}
 /* Responsive styles */
 @media (max-width: 1024px) {
     .crop-monitoring-section-system3 {
@@ -83,7 +89,8 @@
     .text-content-system3 {
         max-width: 100%;
         color: #ffffff;
-        margin-top: 50px;
+        margin-top: 210px;
+        text-align: start;
     }
 
     .text-content-system3 h1 {
@@ -107,6 +114,7 @@
 @media (max-width: 768px) {
     .text-content-system3 h1 {
         font-size: 2rem;
+        color: white;
     }
 
     .text-content-system3 h2 {
@@ -126,12 +134,21 @@
         max-width: 80%; 
     }
 }
+@media (min-width: 480px) {
+
+    .text-content-system3 h1 {
+        font-size: 1.75rem;
+        color: #ffffff;
+        text-align: left;
+    }
+}
 
 @media (max-width: 480px) {
 
     .text-content-system3 h1 {
         font-size: 1.75rem;
         color: #ffffff;
+        text-align: left;
     }
 
     .text-content-system3 h2 {
@@ -482,7 +499,7 @@
 }
 
 .system3-cards {
-    margin: 40px 20px;
+    margin: 40px 20px 0px 15%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -559,12 +576,20 @@
 @media (max-width: 1024px) {
     .system3-cards {
         grid-template-columns: repeat(2, 1fr);
+        margin: 40px 20px 0px;
+    }
+}
+@media (min-width: 1124px) {
+    .system3-cards {
+        grid-template-columns: repeat(3, 1fr);
+        margin: 40px 20px 0px 10%;
     }
 }
 
 @media (max-width: 768px) {
     .system3-cards {
         grid-template-columns: 1fr;
+        margin: 40px 20px 0px 10%;
     }
 }
 
@@ -604,7 +629,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 400px;
+    height: 450px;
 }
 
 .step img {

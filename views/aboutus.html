@@ -8,17 +8,13 @@
     <link rel="stylesheet" href="new_home.css">
     <link rel="stylesheet" href="aboutus.css">
 </head>
-<body>
+<body class="aboutus">
     <header>
         <div class="logo">
             <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
-        <div class = "nav1">
-            <a class="nav-btn "  href="/contact">Book Demo</a>
-        </div>
         <div class="dropdown">
-            
             <button class="dropbtn"><i class="fas fa-bars"></i></button>
             <div class="dropdown-content">
                 <a href="/">Home</a>
@@ -27,8 +23,8 @@
                 <a href="/product1">Revin Skypulse</a>
                 <a href="/usecases">Use Cases</a>
                 <a href="/about">About us</a>
-                
-            </div>
+                <a href="/contact" class="dropdown-demo">Contact Us</a>
+              </div>
         </div>
         <!-- Regular navigation for larger screens -->
         <nav class = "nav about-nav">
@@ -100,24 +96,24 @@
 
     <section class="why-hungry-for-change">
         <div class="text-content">
-            <h2>Why we're hungry for change</h2>
+            <h2>Revin Krishi's Values</h2>
             <div class="underline"></div>
             <div class="features">
                 <div class="feature">
-                    <h3>Modern Marketplace</h3>
-                    <p>Agri remains the largest, yet least transformed industry in the modern world. We’re here to maximise its potential with innovative products for processes that still run on tradition.</p>
+                    <h3>Your Success, Our Priority</h3>
+                    <p>Customer-centricity drives everything we do, striving for delight and loyalty.</p>
                 </div>
                 <div class="feature">
-                    <h3>Financial Freedom</h3>
-                    <p>With ample resources, all kinds of agri businesses can flourish in unimaginable ways. We offer credit and funds to make success more inclusive for agri citizens.</p>
+                    <h3>Ownership Mindset</h3>
+                    <p>We take responsibility, think big, and own every outcome.</p>
                 </div>
                 <div class="feature">
-                    <h3>Ever-Growing Network</h3>
-                    <p>Even today, trust in the agri ecosystem is offered sparingly, often through mutual connections only. We want to unleash a trusted trade network that reaches every nook of the country.</p>
+                    <h3>Building for the Future</h3>
+                    <p>Bold vision, innovative spirit, and long-term focus.</p>
                 </div>
                 <div class="feature">
-                    <h3>Better Lives</h3>
-                    <p>When business solves for itself, everyday lives get better, one success at a time.</p>
+                    <h3>Fuelling Innovation</h3>
+                    <p>Curiosity drives us, passion propels us, and action delivers results.</p>
                 </div>
             </div>
         </div>
@@ -254,10 +250,10 @@
         </div>
         <div class="below-footer">
             <div class="below-footer-content">
-              <h2>Write to us on</h2>
-              <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
-              <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="tel:+919778485001"> 9778485001</a></p>
-              <p>"Send hi on WhatsApp to this number for more details".</p>
+                <h2>Write to us on</h2>
+                <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
+                <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="https://wa.me/919778485001" target="_blank">+919778485001</a></p>
+                <p>"Send hi on WhatsApp to this number for more details".</p>
             </div>
             <hr class="below-footer-divider">
             <div class="below-footer-bottom">
@@ -296,6 +292,44 @@
            });
        });
    </script>
+   <script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var logo = document.querySelector(".logo img");
+      var dropdownButton = document.querySelector(".dropbtn");
+      var dropdownIcon = document.querySelector(".dropbtn i");
+      var navItems = document.querySelectorAll("header nav ul li a"); // Select all <a> tags inside <li>
+      
+      // Toggle 'sticky' class on header
+      header.classList.toggle("sticky", window.scrollY > 0);
+    
+      if (window.scrollY > 0) {
+      logo.src = "logo.png"; // Path to the new logo image
+    } else {
+      logo.src = "logo.png"; // Path to the original logo image
+    }
+
+    if (window.scrollY > 0) {
+      dropdownButton.style.backgroundColor = "transparent"; // Change dropdown background
+      dropdownButton.style.color = "#000"; // Change text/icon color
+      dropdownIcon.style.color = "#000"; // Change icon color to white
+    } else {
+      dropdownButton.style.backgroundColor = ""; // Reset to default
+      dropdownButton.style.color = ""; // Reset text/icon color
+      dropdownIcon.style.color = "black"; // Reset icon color to default
+    }
+      // Change color of <li> items based on scroll position
+      if (window.scrollY > 0) {
+        navItems.forEach(function (item) {
+          item.style.color = "black"; // Change to your desired color (e.g., tomato)
+        });
+      } else {
+        navItems.forEach(function (item) {
+          item.style.color = ""; // Reset to original color (empty string applies default style)
+        });
+      }
+    });
+  </script>
     <script src="../backend/script.js"></script>
 </body>
     

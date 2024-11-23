@@ -20,7 +20,7 @@ body {
 }
 
 header {
-    position: absolute; 
+    position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -34,6 +34,23 @@ header {
     z-index: 1000; 
 }
 
+header.sticky {
+    background: rgba(255, 255, 255, 1); /* Adds a dark transparent background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    color: #f1f1f1; /* Adjusts text color for visibility */
+  }
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+  }
 header .logo{
     margin-left: 30px;
     cursor: pointer;
@@ -130,6 +147,7 @@ header .logo img {
         display: block;
         opacity: 1;
     }
+
     
 }
 
@@ -226,6 +244,7 @@ header .logo img {
     }
     header .logo img {
         height: 40px;
+        margin-left: 20px;
     }
     .nav {
         display: none; 
@@ -258,13 +277,24 @@ header .logo img {
         background-color: transparent;
         border: none;
         cursor: pointer;
-        padding: 10px;
+        padding: 0px;
     }
 
     .dropdown .dropbtn i {
-        color: #333; 
+        color: white; 
         font-size: 24px;
     }
+    body.contact .dropdown .dropbtn i {
+        color: black; /* Black icon color on the contact page */
+      }
+
+    body.aboutus .dropdown .dropbtn i {
+        color: black; /* Black icon color on the contact page */
+      }
+
+    body.usecase .dropdown .dropbtn i {
+        color: black; /* Black icon color on the contact page */
+      }
 
     .dropdown .dropdown-content {
         display: none; 
@@ -309,10 +339,19 @@ header .logo img {
     header .dropdown {
         margin-right: 20px;
     }
+    header.sticky .dropbtn {
+        color: #000;
+      }
     
 }
 
 /* Hero Section */
+
+@media only screen and (max-width: 1025px) {
+    .hero h3{
+        color: #13aea6;
+    }
+}
 @media only screen and (min-width: 1025px) {
     .hero {
         text-align: center;
@@ -454,14 +493,16 @@ header .logo img {
         bottom: 0;
         color: #f1f1f1;
         width: 100%;
-        padding: 20px;
+        padding: 18px;
         margin-top: -200px;
-        
+        text-align: start;
     } 
     
     .hero h1 {
         font-size: 20px;
         margin-bottom: 10px;
+        color:white;
+        text-align: start;
     }
 
     .hero p {
@@ -1227,13 +1268,15 @@ header .logo img {
     align-items: center;
     padding: 50px;
     opacity: 0;
-    pointer-events: none;
+    pointer-events: auto;
     position: absolute;
+    transform: none;
     justify-content: space-between;
     border-radius: 100px 20px 20px 100px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
     animation: animate1 15s linear infinite;
     animation-delay: calc(3s * var(--delay));
+    z-index: calc(6 - var(--delay));
 }
 
 .outer:hover .card {
@@ -1499,6 +1542,11 @@ header .logo img {
     
     .revin-sight img {
         width: 100%;
+        margin-left: -10px;
+    }
+    .skypulse{
+        width: 100%;
+        margin-left: -10px;
     }
     
     .revin-new-design-description {

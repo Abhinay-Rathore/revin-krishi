@@ -8,17 +8,13 @@
     <link rel="stylesheet" href="new_home.css">
     <link rel="stylesheet" href="usecases.css">
 </head>
-<body>
+<body class="usecase">
     <header>
         <div class="logo">
             <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
-        <div class = "nav1">
-            <a class="nav-btn "  href="/contact">Book Demo</a>
-        </div>
         <div class="dropdown">
-            
             <button class="dropbtn"><i class="fas fa-bars"></i></button>
             <div class="dropdown-content">
                 <a href="/">Home</a>
@@ -27,8 +23,8 @@
                 <a href="/product1">Revin Skypulse</a>
                 <a href="/usecases">Use Cases</a>
                 <a href="/about">About us</a>
-                
-            </div>
+                <a href="/contact" class="dropdown-demo">Contact Us</a>
+              </div>
         </div>
         <!-- Regular navigation for larger screens -->
         <nav class = "nav about-nav">
@@ -66,55 +62,55 @@
     <section class="content-section">
         <div class="nav-section">
             <ul class="nav-list">
-                <li class="nav-item activate"><a href="#" data-content="farming">Plantation and Farm</a></li>
+                <li class="nav-item activate"><a href="#" data-content="farming">Plantations and Farms</a></li>
                 <li class="nav-item"><a href="#" data-content="seed">Research and Development</a></li>
                 <li class="nav-item"><a href="#" data-content="food-processing">Food and Bevarage</a></li>
-                <li class="nav-item"><a href="#" data-content="agri-input">Agricultre consulting</a></li>
+                <li class="nav-item"><a href="#" data-content="agri-input">Agricultural Consulting</a></li>
                 <li class="nav-item"><a href="#" data-content="dev-agencies">Agri Insurance</a></li>
                 <li class="nav-item"><a href="#" data-content="agri-lending">Government Insitutions</a></li>
             </ul>
         </div>
         <div class="uses">
             <div id="farming" class="content-item" style="display: block;">
-                <h1>Plantation and Farm</h1>
+                <h1>Plantations and Farms</h1>
                 <div class="uses-container">
                     <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
+                        <img src="plantations_and_farms.jpg" alt="Commodities" class="image">
                     </div>
                     <div class="text-section">
                         <h2>Transform Your Plantation and Farm Operations with Next-Gen Precision Farming</h2>
                         <p class="text-section-para">Elevate your plantation and farm management with Revin Krishi's advanced solutions. Our intelligent in-field monitoring device, Revin Sight, along with Revin Log, provides you with real-time insights into crop health, soil conditions, and weather patterns, enabling precise and informed decision-making. Whether managing vast plantations or medium-sized farms, our technology streamlines operations, enhances productivity, and promotes sustainable practices. With Revin Skypulse's drone services, achieve comprehensive crop monitoring, soil assessment, and yield optimisation, ensuring your enterprise thrives in a competitive market.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Farm_geotagging_and_Farmer_profile_creation.png" alt="Icon 1">
                                 <p>Farm geotagging and Farmer profile creation</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Soil_Assessment_and_Nutrient_Management.png" alt="Icon 2">
                                 <p>Soil Assessment and Nutrient Management</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Live_farm_Weather_and_Weather_Prediction.png" alt="Icon 3">
                                 <p>Live farm Weather and Weather Prediction</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="Improved_Irrigation_Management.png" alt="Icon 4">
                                 <p>Improved Irrigation Management</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="High_precision_Farm_Survey_assessment.png" alt="Icon 5">
                                 <p>High-precision Farm Survey assessment</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Digitise_the_entire_farm_record_keeping.png" alt="Icon 6">
                                 <p>Digitise the entire farm record-keeping</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Assess_Plant_Development_and_Crop_Specific_Alerts.png" alt="Icon 5">
                                 <p>Assess Plant Development and Crop Specific Alerts</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Harvest_Planning_and_predicting_yield_and_quality.png" alt="Icon 6">
                                 <p>Harvest Planning and predicting yield and quality</p>
                             </div>
                         
@@ -126,42 +122,47 @@
                 <h1>Research and Development</h1>
                 <div class="uses-container">
                     <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
+                        <picture>
+                            <!-- Use a smaller image for screens below 768px -->
+                            <source srcset="research.jpg" media="(max-width: 1050px)">
+                            <!-- Default image for larger screens -->
+                            <img src="research1.jpg" alt="Commodities" class="image">
+                        </picture>
                     </div>
                     <div class="text-section">
                         <h2>Pioneering Agricultural Innovation with Unrivalled Data-Driven Research</h2>
                         <p class="text-section-para">Unlock the potential of agricultural research with Revin Krishi's cutting-edge technology. Revin Sight and Revin Log offer unparalleled access to real-time data on crop performance, environmental conditions, and soil health, providing researchers with the tools needed to develop innovative solutions. Our platform supports advanced analytics and AI-powered insights, allowing you to accelerate your research projects and contribute to the advancement of sustainable agriculture. Revin Skypulse enhances your R&D efforts with precise, high-resolution imagery for accurate data collection and analysis.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Identify Disease and Pest Resistance.png" alt="Icon 1">
                                 <p>Identify Disease and Pest Resistance</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Measure Crop Water Use.png" alt="Icon 2">
                                 <p>Measure Crop Water Use</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Track Heat Unit Accumulation.png" alt="Icon 3">
                                 <p>Track Heat Unit Accumulation</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="Baseline Photosynthesis.png" alt="Icon 4">
                                 <p>Baseline Photosynthesis</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Assess Plant Development.png" alt="Icon 5">
                                 <p>Assess Plant Development</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Monitor Climate.png" alt="Icon 6">
                                 <p>Monitor Climate</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Farmer engagement & training.png" alt="Icon 5">
                                 <p>Farmer engagement & training</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="PoP preparation and advisory in real-time.png" alt="Icon 6">
                                 <p>PoP preparation and advisory in real-time</p>
                             </div>
                         
@@ -173,42 +174,47 @@
                 <h1>Food and Bevarage</h1>
                 <div class="uses-container">
                     <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
+                        <picture>
+                            <!-- Use a smaller image for screens below 768px -->
+                            <source srcset="Food_and_Beverage.jpg" media="(max-width: 1050px)">
+                            <!-- Default image for larger screens -->
+                            <img src="Food_and_Beverage1.jpg" alt="Commodities" class="image">
+                        </picture>
                     </div>
                     <div class="text-section">
                         <h2>Guarantee Quality and Traceability from Farm to Table</h2>
                         <p class="text-section-para">In the food and beverage industry, quality and traceability are paramount. Revin Krishi's solutions, including Revin Log, ensure that you have complete visibility into every stage of the agricultural supply chain. From monitoring crop conditions with Revin Sight to ensuring the safety and quality of raw materials with AI-powered analysis, our technology helps you meet stringent industry standards. Revin Skypulse's drone services further enhance quality control by providing detailed insights into crop health and yield, enabling you to deliver top-quality products to consumers.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Minimise cultivation malpractices.png" alt="Icon 1">
                                 <p>Minimise cultivation malpractices</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Meet certification standards.png" alt="Icon 2">
                                 <p>Meet certification standards</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Improve visibility into your supply chain.png" alt="Icon 3">
                                 <p>Improve visibility into your supply chain</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="PreventCounterfeiting.png" alt="Icon 4">
                                 <p>Prevent Counterfeiting</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="FarmDigitization.png" alt="Icon 5">
                                 <p>Farm Digitization</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Pest and Disease Alerts.png" alt="Icon 6">
                                 <p>Pest and Disease Alerts</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Farmer Profile Creation.png" alt="Icon 5">
                                 <p>Farmer Profile Creation</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Increase and verify sustainable practice.png" alt="Icon 6">
                                 <p>Increase and verify sustainable practice</p>
                             </div>
                         
@@ -219,43 +225,44 @@
             <div id="agri-input" class="content-item" style="display: none;">
                 <h1>Agricultre consulting</h1>
                 <div class="uses-container">
-                    <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
-                    </div>
+                    <picture>
+                        <source srcset="Agricultural_Consulting.jpg" media="(max-width: 1050px)">
+                        <img src="Agricultural_Consulting1.jpg" alt="Commodities" class="image">
+                    </picture>
                     <div class="text-section">
                         <h2>Empower Your Clients with Next-Generation Agricultural Intelligence</h2>
                         <p class="text-section-para">As an agricultural consultant, providing accurate and actionable advice is crucial. Revin Krishi's suite of products, including Revin Sight, Revin Log, and Revin Skypulse, equips you with the tools to offer data-driven recommendations to your clients. Whether advising on crop management, pest control, or sustainable practices, our technology ensures that your insights are backed by real-time data and advanced analytics. Enhance your consulting services with precision technology that drives results and helps your clients achieve their agricultural goals.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Yield Benchmarking and prediction analysis.png" alt="Icon 1">
                                 <p>Yield Benchmarking and prediction analysis</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Intelligent Farm Analytics Insights.png" alt="Icon 2">
                                 <p>Intelligent Farm Analytics Insights</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Analytics Support for Data-driven Decisions.png" alt="Icon 3">
                                 <p>Analytics Support for Data-driven Decisions</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="Adherence to GAP standards.png" alt="Icon 4">
                                 <p>Adherence to GAP standards</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Leverage Historical Data Insights.png" alt="Icon 5">
                                 <p>Leverage Historical Data Insights</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Improve farmer income.png" alt="Icon 6">
                                 <p>Improve farmer income</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Farmer engagement & training1.png" alt="Icon 5">
                                 <p>Farmer engagement & training</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Tackle climate change.png" alt="Icon 6">
                                 <p>Tackle climate change</p>
                             </div>
                         
@@ -267,42 +274,45 @@
                 <h1>Agri Insurance</h1>
                 <div class="uses-container">
                     <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
+                        <picture>
+                            <source srcset="Agri_Insurance.jpg" media="(max-width: 1050px)">
+                            <img src="Agri_Insurance1.jpg" alt="Commodities" class="image">
+                        </picture>
                     </div>
                     <div class="text-section">
                         <h2>Revolutionise Risk Management with Precision Agri-Tech</h2>
                         <p class="text-section-para">Agri insurance providers can significantly reduce risks with Revin Krishi's technology. Revin Sight offers real-time monitoring of crop health, soil conditions, and weather patterns, enabling more accurate risk assessments. Revin Log's comprehensive data management platform supports climate-smart advisories and predictive analytics, helping insurers tailor their policies to individual farm conditions. With Revin Skypulse's drone services, gain detailed insights into crop conditions and damage assessments, ensuring precise and fair claim processing.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Define & Adjust Premiums.png" alt="Icon 1">
                                 <p>Define & Adjust Premiums</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Minimise Crop Losses.png" alt="Icon 2">
                                 <p>Minimise Crop Losses</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Get Compensated Fairly.png" alt="Icon 3">
                                 <p>Get Compensated Fairly</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="Farm, Pest & Disease Intelligence.png" alt="Icon 4">
                                 <p>Farm, Pest & Disease Intelligence</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Faster Claim Processing.png" alt="Icon 5">
                                 <p>Faster Claim Processing</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Minimise Insurance Frauds.png" alt="Icon 6">
                                 <p>Minimise Insurance Frauds</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Predictive and prescriptive intelligence.png" alt="Icon 5">
                                 <p>Predictive and prescriptive intelligence</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Improved crop quality.png" alt="Icon 6">
                                 <p>Improved crop quality</p>
                             </div>
                         
@@ -314,42 +324,45 @@
                 <h1>Government Insitutions</h1>
                 <div class="uses-container">
                     <div class="image-section">
-                        <img src="product1.jpg" alt="Commodities" class="image">
+                        <picture>
+                            <source srcset="Government_Institutions.jpg" media="(max-width: 1050px)">
+                            <img src="Government_Institutions1.jpg" alt="Commodities" class="image">
+                        </picture>
                     </div>
                     <div class="text-section">
                         <h2>Shape the Future of Agriculture with Real-Time Insights and Policy Innovation</h2>
                         <p class="text-section-para">Support agricultural development and policy-making with Revin Krishi's innovative technology solutions. Government institutions can leverage Revin Sight and Revin Log to gather real-time data on crop performance, soil health, and environmental conditions across vast regions. This data-driven approach enables more informed decision-making, supports sustainable farming initiatives, and enhances food security. Revin Skypulse's drone services provide high-resolution imagery for accurate land assessments, helping governments implement effective agricultural policies and programs.</p>
                         <div class="features">
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 1">
+                                <img src="Farm Digitisation & Farmer KYC.png" alt="Icon 1">
                                 <p>Farm Digitisation & Farmer KYC</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 2">
+                                <img src="Crop health monitoring and cycle stage detection.png" alt="Icon 2">
                                 <p>Crop health monitoring and cycle stage detection</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 3">
+                                <img src="Easy integration with legacy systems.png" alt="Icon 3">
                                 <p>Easy integration with legacy systems</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 4">
+                                <img src="Plot audit and identification.png" alt="Icon 4">
                                 <p>Plot audit and identification</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Improved water management.png" alt="Icon 5">
                                 <p>Improved water management</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Improve farm productivity and traceability.png" alt="Icon 6">
                                 <p>Improve farm productivity and traceability</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 5">
+                                <img src="Yield benchmarking and prediction analysis1.png" alt="Icon 5">
                                 <p>Yield benchmarking and prediction analysis</p>
                             </div>
                             <div class="feature-item">
-                                <img src="manage-icon.svg" alt="Icon 6">
+                                <img src="Farmer engagement and Adherence to GAP standards.png" alt="Icon 6">
                                 <p>Farmer engagement and Adherence to GAP standards</p>
                             </div>
                         </div>
@@ -520,10 +533,10 @@
         </div>
         <div class="below-footer">
             <div class="below-footer-content">
-              <h2>Write to us on</h2>
-              <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
-              <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="tel:+919778485001"> 9778485001</a></p>
-              <p>"Send hi on WhatsApp to this number for more details".</p>
+                <h2>Write to us on</h2>
+                <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
+                <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="https://wa.me/919778485001" target="_blank">+919778485001</a></p>
+                <p>"Send hi on WhatsApp to this number for more details".</p>
             </div>
             <hr class="below-footer-divider">
             <div class="below-footer-bottom">
@@ -595,6 +608,44 @@
     });
 
 </script>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var logo = document.querySelector(".logo img");
+      var dropdownButton = document.querySelector(".dropbtn");
+      var dropdownIcon = document.querySelector(".dropbtn i");
+      var navItems = document.querySelectorAll("header nav ul li a"); // Select all <a> tags inside <li>
+      
+      // Toggle 'sticky' class on header
+      header.classList.toggle("sticky", window.scrollY > 0);
+    
+      if (window.scrollY > 0) {
+      logo.src = "logo.png"; // Path to the new logo image
+    } else {
+      logo.src = "logo.png"; // Path to the original logo image
+    }
+
+    if (window.scrollY > 0) {
+      dropdownButton.style.backgroundColor = "transparent"; // Change dropdown background
+      dropdownButton.style.color = "black"; // Change text/icon color
+      dropdownIcon.style.color = "black"; // Change icon color to white
+    } else {
+      dropdownButton.style.backgroundColor = ""; // Reset to default
+      dropdownButton.style.color = ""; // Reset text/icon color
+      dropdownIcon.style.color = "black"; // Reset icon color to default
+    }
+      // Change color of <li> items based on scroll position
+      if (window.scrollY > 0) {
+        navItems.forEach(function (item) {
+          item.style.color = "black"; // Change to your desired color (e.g., tomato)
+        });
+      } else {
+        navItems.forEach(function (item) {
+          item.style.color = ""; // Reset to original color (empty string applies default style)
+        });
+      }
+    });
+  </script>
 
 
 </html>

@@ -12,14 +12,13 @@
 <body>
     <header>
         <div class="logo">
-            <img src="logo.png" alt="Satcard Logo">
+            <img src="logo1.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
-        <div class = "nav1">
+        <!-- <div class = "nav1">
             <a class="nav-btn "  href="/contact">Book Demo</a>
-        </div>
+        </div> -->
         <div class="dropdown">
-            
             <button class="dropbtn"><i class="fas fa-bars"></i></button>
             <div class="dropdown-content">
                 <a href="/">Home</a>
@@ -28,8 +27,8 @@
                 <a href="/product1">Revin Skypulse</a>
                 <a href="/usecases">Use Cases</a>
                 <a href="/about">About us</a>
-                
-            </div>
+                <a href="/contact" class="dropdown-demo">Contact Us</a>
+              </div>
         </div>
         <!-- Regular navigation for larger screens -->
         <nav class = "nav">
@@ -119,7 +118,7 @@
                 </div>
                 <p>33%</p>
               </div>
-              <div class="card" style="--delay:2;">
+              <div class="card" style="--delay:3;">
                 <div class="content">
                   <div class="img"><img src="agritech.png" alt=""></div>
                   <div class="details">
@@ -467,7 +466,7 @@
             <div class="below-footer-content">
               <h2>Write to us on</h2>
               <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
-              <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="tel:+919778485001"> 9778485001</a></p>
+              <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="https://wa.me/919778485001" target="_blank">+919778485001</a></p>
               <p>"Send hi on WhatsApp to this number for more details".</p>
             </div>
             <hr class="below-footer-divider">
@@ -574,6 +573,44 @@ updateCarousel(currentCardIndex);
 
 
 </script>
+<script type="text/javascript">
+    window.addEventListener("scroll", function () {
+      var header = document.querySelector("header");
+      var logo = document.querySelector(".logo img");
+      var dropdownButton = document.querySelector(".dropbtn");
+      var dropdownIcon = document.querySelector(".dropbtn i");
+      var navItems = document.querySelectorAll("header nav ul li a"); // Select all <a> tags inside <li>
+      
+      // Toggle 'sticky' class on header
+      header.classList.toggle("sticky", window.scrollY > 0);
+    
+      if (window.scrollY > 0) {
+      logo.src = "logo.png"; // Path to the new logo image
+    } else {
+      logo.src = "logo1.png"; // Path to the original logo image
+    }
+
+    if (window.scrollY > 0) {
+      dropdownButton.style.backgroundColor = "transparent"; // Change dropdown background
+      dropdownButton.style.color = "#000"; // Change text/icon color
+      dropdownIcon.style.color = "#000"; // Change icon color to white
+    } else {
+      dropdownButton.style.backgroundColor = ""; // Reset to default
+      dropdownButton.style.color = ""; // Reset text/icon color
+      dropdownIcon.style.color = "white"; // Reset icon color to default
+    }
+      // Change color of <li> items based on scroll position
+      if (window.scrollY > 0) {
+        navItems.forEach(function (item) {
+          item.style.color = "black"; // Change to your desired color (e.g., tomato)
+        });
+      } else {
+        navItems.forEach(function (item) {
+          item.style.color = ""; // Reset to original color (empty string applies default style)
+        });
+      }
+    });
+  </script>
 
  <script src="../backend/script.js"></script>
 
