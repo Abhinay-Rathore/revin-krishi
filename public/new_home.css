@@ -84,6 +84,7 @@ header .logo img {
     
     header .logo img {
         height: 60px;
+        width:auto;
     }
     
     nav{
