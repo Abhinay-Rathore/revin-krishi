@@ -1533,10 +1533,14 @@ header .logo img {
             0px 0px 15px rgba(0, 0, 0, 0.03);
         transition: opacity 0.5s ease, transform 1s ease;
         opacity: 0; 
+        z-index: 1; 
+        pointer-events: none; 
     }
     
     .revin-new-carousel-card.active {
         opacity: 1;
+        z-index: 2;
+        pointer-events: auto;
     }
     
     .revin-new-design-product-title {
@@ -1690,7 +1694,6 @@ header .logo img {
         height: 100%;
     }
 
-
     .revin-new-carousel-btn {
         font-size: 18px;
     }
@@ -1825,6 +1828,9 @@ header .logo img {
     .revin-new-read-more {
         background-color: #006666;
     }
+    
+
+
 
 }
 
