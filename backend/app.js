@@ -4,6 +4,7 @@ dotenv.config();
 const session = require('express-session');
 const bodyParser = require("body-parser");
 const path = require('path');
+const favicon = require('serve-favicon');
 // const { sequelize } = require('./models/database')
 // sequelize.sync({ alter: true });
 const app = express();
@@ -26,13 +27,15 @@ app.use(session({
 })) ;
 // Start the server 
 
-
+// for favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 const defaultClient = SibApiV3Sdk.ApiClient.instance;
 
 var apiKey = defaultClient.authentications['api-key'];
+const apiKey1 = process.env.API_KEY;
 // create api key put  here from brevo
-apiKey.apiKey = 'api-key';
+apiKey.apiKey = apiKey1;
 
 app.get("/", (req, res) => {
   res.sendFile(path.join(__dirname, '../views', 'new_home.html'));
@@ -81,12 +84,12 @@ app.post("/send-mail", async (req, res) => {
   const apiInstance = new SibApiV3Sdk.TransactionalEmailsApi();
   const sender = {
       // mail from which api is created
-      email: "mail",
+      email: "digilshibu.satcard.iitpkd@gmail.com",
       name: "Revin",
   };
   const receiver = [
       {
-          email: "satcard mail", // will be replaced by official Satcard email
+          email: "connect@revinkrishi.com", // will be replaced by official Satcard email
       },
   ];
 
@@ -94,7 +97,7 @@ app.post("/send-mail", async (req, res) => {
       await apiInstance.sendTransacEmail({
           sender,
           to: receiver,
-          subject: "Revin Krishi Notification",
+          subject: "Contacted from Website",
           textContent: emailContent,
       });
       console.log("Email sent successfully");
