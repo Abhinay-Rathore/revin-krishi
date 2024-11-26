@@ -88,12 +88,12 @@
                     </div>
                         
                     <div class="multi-select">
-                        <div class="select-box" onclick="toggleDropdown()">
+                        <div class="select-box" onclick="toggleDropdown('checkboxes1')">
                             <i class="fas fa-list"></i>
                             <span class="selected" type="Select">What is your primary role in agriculture?</span>
                             <i class="fas fa-caret-down dropdown-icon"></i>
                         </div>
-                        <div class="checkboxes" id="checkboxes">
+                        <div class="checkboxes" id="checkboxes1">
                             <label>
                                 <input type="checkbox" name="interests" value="option1">
                                 Grower
@@ -130,12 +130,12 @@
                     </div>
 
                         <div class="multi-select">
-                            <div class="select-box" onclick="toggleDropdown()">
+                            <div class="select-box" onclick="toggleDropdown('checkboxes2')">
                                 <i class="fas fa-list"></i>
                                 <span class="selected" type="Select">Area(s) of interest</span>
                                 <i class="fas fa-caret-down dropdown-icon"></i>
                             </div>
-                            <div class="checkboxes" id="checkboxes">
+                            <div class="checkboxes" id="checkboxes2">
                                 <label>
                                     <input type="checkbox" name="interests" value="option1">
                                     Irrigation
@@ -272,16 +272,25 @@
 
 </body>
 <script>
-    // <script>
-function toggleDropdown() {
-    var checkboxes = document.getElementById("checkboxes");
-    if (checkboxes.style.display === "block") {
-        checkboxes.style.display = "none";
-    } else {
-        checkboxes.style.display = "block";
+    function toggleDropdown(id) {
+    const dropdown = document.getElementById(id);
+    // Close all dropdowns first
+    document.querySelectorAll('.checkboxes').forEach((box) => {
+        if (box.id !== id) box.style.display = 'none';
+    });
+    // Toggle the clicked dropdown
+    dropdown.style.display = dropdown.style.display === "block" ? "none" : "block";
     }
-}
 
+    // Close dropdowns when clicking outside
+    document.addEventListener("click", function(event) {
+    // Check if the click is outside all multi-select containers
+    if (!event.target.closest('.multi-select')) {
+        document.querySelectorAll('.checkboxes').forEach((box) => {
+        box.style.display = 'none';
+        });
+    }
+    });
 
 </script>
 <script type="text/javascript">
