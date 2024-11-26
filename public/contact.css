@@ -321,7 +321,6 @@ body, html{
 @media (max-width: 480px) {
   .contact-container {
     padding: 1.5rem;
-    pointer-events: none;
   }
 
   .contact-info:before {

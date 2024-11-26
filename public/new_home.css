@@ -362,6 +362,8 @@ header .logo img {
         outline: 7px solid white;
         outline-offset: -1px;
         overflow: hidden;
+        position: relative;
+        z-index: -1;
     }
     
 }
@@ -461,9 +463,9 @@ header .logo img {
         text-align: center;
         background-size: cover;
         color: #fff;
-        background: 
+        /* background: 
             linear-gradient(180deg, #000 0%, transparent 50%), 
-            linear-gradient(0deg, #000 0%, transparent 50%); 
+            linear-gradient(0deg, #000 0%, transparent 50%);  */
     }
 
     .desktop-video {
@@ -493,6 +495,7 @@ header .logo img {
         min-width: 100%;
         min-height: 100%;
         overflow: hidden;
+        position: relative;
         z-index: -1;
    }
 
@@ -512,7 +515,7 @@ header .logo img {
         text-align: center;
         background-size: cover;
         color: #fff; 
-        margin-bottom: -20px;
+        /* margin-bottom: -20px; */
         background: 
             linear-gradient(180deg, #000 -30%, transparent 50%), 
             linear-gradient(0deg, #000 -30%, transparent 50%);
