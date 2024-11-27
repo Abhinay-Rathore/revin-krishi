@@ -11,8 +11,8 @@
 </head>
 <body>
     <header>
-        <div class="logo">
-            <img src="logo1.png" alt="Revin Logo">
+        <div class="logo" data-href="/">
+            <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
         <!-- <div class = "nav1">
@@ -134,7 +134,7 @@
                 </div>
                 <p>580+</p>
               </div>
-              <div class="card" style="--delay:2;">
+              <!-- <div class="card" style="--delay:2;">
                 <div class="content">
                   <div class="img"><img src="guiding.png" alt=""></div>
                   <div class="details">
@@ -142,7 +142,7 @@
                   </div>
                 </div>
                 <p>110+</p>
-              </div>
+              </div> -->
             </div>
         </div>
     </section> 
@@ -473,7 +473,7 @@
             <div class="below-footer-content">
               <h2>Write to us on</h2>
               <p><a href="mailto:connect@revinkrishi.com">connect@revinkrishi.com</a></p>
-              <p><i class="fa fa-whatsapp" style="color: green; font-size: 24px;"></i><a href="https://wa.me/919778485001" target="_blank">+919778485001</a></p>
+              <p><i class="fa fa-whatsapp" style="color: green; " id="whatsapp-icon"></i><a href="https://wa.me/919778485001" target="_blank">+919778485001</a></p>
               <p>"Send hi on WhatsApp to this number for more details".</p>
             </div>
             <hr class="below-footer-divider">
@@ -581,6 +581,10 @@ updateCarousel(currentCardIndex);
 
 </script>
 <script type="text/javascript">
+    document.querySelector('.logo').addEventListener('click', function() {
+    window.location.href = this.getAttribute('data-href');
+});
+
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       var logo = document.querySelector(".logo img");

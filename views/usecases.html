@@ -10,7 +10,7 @@
 </head>
 <body class="usecase">
     <header>
-        <div class="logo">
+        <div class="logo" data-href="/">
             <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
@@ -227,7 +227,7 @@
                 <div class="uses-container">
                     <picture>
                         <source srcset="Agricultural_Consulting.jpg" media="(max-width: 1050px)">
-                        <img src="Agricultural_Consulting2.jpg" alt="Commodities" class="image">
+                        <img src="Agricultural_Consulting1.jpg" alt="Commodities" class="image">
                     </picture>
                     <div class="text-section">
                         <h2>Empower Your Clients with Next-Generation Agricultural Intelligence</h2>
@@ -609,6 +609,10 @@
 
 </script>
 <script type="text/javascript">
+    document.querySelector('.logo').addEventListener('click', function() {
+    window.location.href = this.getAttribute('data-href');
+});
+
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       var logo = document.querySelector(".logo img");

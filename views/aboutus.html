@@ -10,7 +10,7 @@
 </head>
 <body class="aboutus">
     <header>
-        <div class="logo">
+        <div class="logo" data-href="/">
             <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
@@ -51,9 +51,13 @@
             <div class="mission-content">
                 <div class="mission-text">
                     <!-- <h1>Our Mission</h1> -->
-                    <h2>Transforming Agriculture, <span>Together</span></h2>
-                    <p>We are leveraging technological innovation for smarter farming and better harvests.
-                    </p>
+                    <h2>
+                        <span class="line1">We Make</span><br>
+                        <span class="line2">Farming Life</span><br>
+                        <span class="line3">Happy Life</span>
+                    </h2>
+                    <!-- <p>We are leveraging technological innovation for smarter farming and better harvests.
+                    </p> -->
                 </div>
                 <div class="mission-images">
                     <video autoplay muted loop plays-inline id="about-video">
@@ -136,35 +140,56 @@
             </div>
     </section>
 
-<section class="team-section">
-    <h2>Meet our founders</h2>
-    <div class="team-container">
-        <div class="team-team-member">
-            <div class="team-image-container">
-                <img src="Sreehari_REVIN.png" alt="Jim Ethington">
-                <div class="team-overlay"></div>
+    <section class="team-section">
+        <h2>Meet our founders</h2>
+        <div class="team-container">
+            <!-- Team Member 1 -->
+            <div class="team-team-member">
+                <div class="team-image-container">
+                    <a href="https://www.linkedin.com/in/vsreehari/" target="_blank" rel="noopener noreferrer">
+                        <img src="Sreehari_REVIN.png" alt="Sreehari V">
+                        <div class="team-overlay"></div>
+                    </a>
+                </div>
+                <h3 class="team-name">
+                    <a href="https://www.linkedin.com/in/vsreehari/" target="_blank" rel="noopener noreferrer">
+                        Sreehari V
+                    </a>
+                </h3>
+                <p class="team-role">CEO and Co-Founder</p>
             </div>
-            <h3 class="team-name">Sreehari V</h3>
-            <p class="team-role">CEO and Co-Founder</p>
-        </div>
-        <div class="team-team-member">
-            <div class="team-image-container">
-                <img src="Sreenath.jpeg" alt="Oz Ben-David">
-                <div class="team-overlay"></div>
+            <!-- Team Member 2 -->
+            <div class="team-team-member">
+                <div class="team-image-container">
+                    <a href="https://www.linkedin.com/in/sreenathvijayakumar/" target="_blank" rel="noopener noreferrer">
+                        <img src="Sreenath.jpeg" alt="Sreenath Vijayakumar">
+                        <div class="team-overlay"></div>
+                    </a>
+                </div>
+                <h3 class="team-name">
+                    <a href="https://www.linkedin.com/in/sreenathvijayakumar/" target="_blank" rel="noopener noreferrer">
+                        Sreenath Vijayakumar
+                    </a>
+                </h3>
+                <p class="team-role">Co-Founder, Technical Advisor</p>
             </div>
-            <h3 class="team-name">Sreenath Vijayakumar</h3>
-            <p class="team-role">Co-Founder, Technical Advisor</p>
-        </div>
-        <div class="team-team-member">
-            <div class="team-image-container">
-                <img src="Satyajit_Das.jpg" alt="Mika Farber">
-                <div class="team-overlay"></div>
+            <!-- Team Member 3 -->
+            <div class="team-team-member">
+                <div class="team-image-container">
+                    <a href="https://www.linkedin.com/in/satyajit-das-1105a86a/" target="_blank" rel="noopener noreferrer">
+                        <img src="Satyajit_Das.jpg" alt="Satyajit Das">
+                        <div class="team-overlay"></div>
+                    </a>
+                </div>
+                <h3 class="team-name">
+                    <a href="https://www.linkedin.com/in/satyajit-das-1105a86a/" target="_blank" rel="noopener noreferrer">
+                        Satyajit Das
+                    </a>
+                </h3>
+                <p class="team-role">Co-Founder, Technical Advisor</p>
             </div>
-            <h3 class="team-name">Satyajit Das</h3>
-            <p class="team-role">Co-Founder, Technical Advisor</p>
         </div>
-    </div>
-</section>
+    </section>
 
     <!-- <section class="team-section">
         <div class="container">
@@ -293,6 +318,10 @@
        });
    </script>
    <script type="text/javascript">
+    document.querySelector('.logo').addEventListener('click', function() {
+    window.location.href = this.getAttribute('data-href');
+});
+
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       var logo = document.querySelector(".logo img");

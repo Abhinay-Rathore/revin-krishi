@@ -10,7 +10,7 @@
 </head>
 <body class="contact">
     <header>
-        <div class="logo">
+        <div class="logo" data-href="/">
             <img src="logo.png" alt="Satcard Logo">
         </div>
         <!-- Dropdown icon for mobile screens -->
@@ -294,6 +294,10 @@
 
 </script>
 <script type="text/javascript">
+    document.querySelector('.logo').addEventListener('click', function() {
+    window.location.href = this.getAttribute('data-href');
+});
+
     window.addEventListener("scroll", function () {
       var header = document.querySelector("header");
       var logo = document.querySelector(".logo img");
